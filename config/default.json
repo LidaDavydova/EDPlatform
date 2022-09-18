@@ -1,0 +1,5 @@
+{
+    "port": 5000,
+    "jwtSecret": "fgrthyftgyjuiy8dsxer5r6r6yhth7dcxf64r5we87odserf43i9a'wsd",
+    "mongoUrl": "mongodb+srv://lida:lida2005@cluster0.xrh4n.mongodb.net/school?retryWrites=true&w=majority"
+}

@@ -1,0 +1,62 @@
+import React, {useState} from "react"
+import { useDispatch } from "react-redux"
+import { useNavigate } from "react-router-dom"
+import { createPostMotivation } from "../redux/features/posts/postSlice"
+
+export const AddPostPage = () => {
+    const [url, setUrl] = useState('')
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+    const submitHandler = () => {
+        try {
+            const data = new FormData()
+            data.append('videoUrl', url)
+            dispatch(createPostMotivation(data))
+            navigate('/')
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    const clearFormData = () => {
+        setUrl('')
+    }
+
+    return (
+        <div>
+            <form 
+                className="w-1/3 mx-auto py-10"
+                onSubmit={(e) => e.preventDefault()}
+            >
+                <label className="text-base text-black opacity-70 font-source-serif-pro">
+                    Url:
+                    <input 
+                        type='text'
+                        value={url}
+                        onChange={(e) => setUrl(e.target.value)}
+                        placeholder="Ссылка на видео"
+                        className="mt-1 text-black w-full rounded-lg bg-gray-400 border py-1 px-2 text-base outline-none placeholder:text-gray-700"
+                    />
+                </label>
+
+                <div className="flex gap-8 items-center justify-center mt-4">
+                    <button 
+                        onClick={submitHandler}
+                        className="flex justify-center items-center bg-gray-600 text-base text-white rounded-sm py-2 px-4"
+                    >
+                        Добавить
+                    </button>
+                    <button
+                        onClick={clearFormData}
+                        className="flex justify-center items-center bg-red-500 text-base text-white rounded-sm py-2 px-4"
+                    >
+                        Отменить
+                    </button>
+                </div>
+            </form>
+            
+            
+        </div>
+    )
+}
