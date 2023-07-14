@@ -1,0 +1,2 @@
+# EDPlatform
+School Platform
