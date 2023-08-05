@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--metatextblock-->
+  <title>main</title>
+  <meta property="og:url" content="http://project4685460.tilda.ws">
+  <meta property="og:title" content="main">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://static.tildacdn.info/tild3664-6232-4531-b435-396333386564/-/resize/504x/frankdenney91407.jpg">
+  <link rel="canonical" href="http://project4685460.tilda.ws/">
+  <!--/metatextblock-->
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="dns-prefetch" href="https://ws.tildacdn.com/">
+  <link rel="dns-prefetch" href="https://static.tildacdn.info/">
+  <link rel="shortcut icon" href="https://static.tildacdn.info/img/tildafavicon.ico" type="image/x-icon">
+  <!-- Assets -->
+  <script type="text/javascript" async="" id="tildastatscript" src="./static/main_files/tilda-stat-1.0.min.js"></script>
+  <script src="./static/мmain_files/tilda-fallback-1.0.min.js" async="" charset="utf-8"></script>
+  <link rel="stylesheet" href="./static/main_files/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';">
+  <link rel="stylesheet" href="./static/main_files/tilda-blocks-page22774589.min.css" type="text/css" media="all" onerror="this.loaderr='y';">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link href="./static/main_files/css2.css" rel="stylesheet">
+  <link rel="stylesheet" href="./static/main_files/tilda-slds-1.4.min.css" type="text/css" media="all" onload="this.media='all';" onerror="this.loaderr='y';">
+  <noscript>
+    <link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-slds-1.4.min.css" type="text/css" media="all" />
+  </noscript>
+  <script type="text/javascript">
+    (function(d) {
+      if (!d.visibilityState) {
+        var s = d.createElement('script');
+        s.src = 'https://static.tildacdn.info/js/tilda-polyfill-1.0.min.js';
+        d.getElementsByTagName('head')[0].appendChild(s);
+      }
+    })(document);
+
+    function t_onReady(func) {
+      if (document.readyState != 'loading') {
+        func();
+      } else {
+        document.addEventListener('DOMContentLoaded', func);
+      }
+    }
+
+    function t_onFuncLoad(funcName, okFunc, time) {
+      if (typeof window[funcName] === 'function') {
+        okFunc();
+      } else {
+        setTimeout(function() {
+          t_onFuncLoad(funcName, okFunc, time);
+        }, (time || 100));
+      }
+    }
+
+    function t396_initialScale(t) {
+      t = document.getElementById("rec" + t);
+      if (t) {
+        t = t.querySelector(".t396__artboard");
+        if (t) {
+          var e, r = document.documentElement.clientWidth,
+            a = [];
+          if (i = t.getAttribute("data-artboard-screens"))
+            for (var i = i.split(","), l = 0; l < i.length; l++) a[l] = parseInt(i[l], 10);
+          else a = [320, 480, 640, 960, 1200];
+          for (l = 0; l < a.length; l++) {
+            var o = a[l];
+            o <= r && (e = o)
+          }
+          var d = "edit" === window.allrecords.getAttribute("data-tilda-mode"),
+            n = "center" === t396_getFieldValue(t, "valign", e, a),
+            g = "grid" === t396_getFieldValue(t, "upscale", e, a),
+            u = t396_getFieldValue(t, "height_vh", e, a),
+            c = t396_getFieldValue(t, "height", e, a),
+            f = !!window.opr && !!window.opr.addons || !!window.opera || -1 !== navigator.userAgent.indexOf(" OPR/");
+          if (!d && n && !g && !u && c && !f) {
+            for (var h = parseFloat((r / e).toFixed(3)), s = [t, t.querySelector(".t396__carrier"), t.querySelector(".t396__filter")], l = 0; l < s.length; l++) s[l].style.height = Math.floor(parseInt(c, 10) * h) + "px";
+            for (var _ = t.querySelectorAll(".t396__elem"), l = 0; l < _.length; l++) _[l].style.zoom = h
+          }
+        }
+      }
+    }
+
+    function t396_getFieldValue(t, e, r, a) {
+      var i = a[a.length - 1],
+        l = r === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + r);
+      if (!l)
+        for (var o = 0; o < a.length; o++) {
+          var d = a[o];
+          if (!(d <= r) && (l = d === i ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + d))) break
+        }
+      return l
+    }
+  </script>
+  <script src="./static/main_files/tilda-blocks-page22774589.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+  <script src="./static/main_files/lazyload-1.3.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+  <script src="./static/main_files/tilda-zero-1.1.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+  <script src="./static/main_files/tilda-slds-1.4.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+  <script src="./static/main_files/hammer.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+  <script src="./static/main_files/tilda-zero-scale-1.0.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+  <script src="./static/main_files/tilda-events-1.0.min.js" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+  </script>
+  <script type="text/javascript">
+    (function() {
+      if ((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent)) === false && typeof(sessionStorage) != 'undefined' && sessionStorage.getItem('visited') !== 'y' && document.visibilityState) {
+        var style = document.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML = '@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';
+        document.getElementsByTagName('head')[0].appendChild(style);
+
+        function t_setvisRecs() {
+          var alr = document.querySelectorAll('.t-records');
+          Array.prototype.forEach.call(alr, function(el) {
+            el.classList.add("t-records_animated");
+          });
+          setTimeout(function() {
+            Array.prototype.forEach.call(alr, function(el) {
+              el.classList.add("t-records_visible");
+            });
+            sessionStorage.setItem("visited", "y");
+          }, 400);
+        }
+        document.addEventListener('DOMContentLoaded', t_setvisRecs);
+      }
+    })();
+  </script>
+  <style type="text/css">
+    @media screen and (min-width: 980px) {
+      .t-records {
+        opacity: 0;
+      }
+      .t-records_animated {
+        -webkit-transition: opacity ease-in-out .2s;
+        -moz-transition: opacity ease-in-out .2s;
+        -o-transition: opacity ease-in-out .2s;
+        transition: opacity ease-in-out .2s;
+      }
+      .t-records.t-records_visible {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body class="t-body" style="margin:0;">
+  <!--allrecords-->
+  <div id="allrecords" class="t-records t-records_animated t-records_visible" data-hook="blocks-collection-content-node" data-tilda-project-id="4685460" data-tilda-page-id="22774589" data-tilda-formskey="786e4a1d92eaa53b779c55e94d76960e" data-tilda-lazy="yes">
+    <div id="rec367933409" class="r t-rec r_showed r_anim" style=" " data-record-type="396">
+      <!-- T396 -->
+      <style>
+        #rec367933409 .t396__artboard {
+          height: 240px;
+          background-color: #0f292f;
+        }
+        
+        #rec367933409 .t396__filter {
+          height: 240px;
+        }
+        
+        #rec367933409 .t396__carrier {
+          height: 240px;
+          background-position: center center;
+          background-attachment: scroll;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .t396__artboard {
+            height: 240px;
+          }
+          #rec367933409 .t396__filter {
+            height: 240px;
+          }
+          #rec367933409 .t396__carrier {
+            height: 240px;
+            background-attachment: scroll;
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .t396__artboard {}
+          #rec367933409 .t396__filter {}
+          #rec367933409 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .t396__artboard {
+            height: 236px;
+          }
+          #rec367933409 .t396__filter {
+            height: 236px;
+          }
+          #rec367933409 .t396__carrier {
+            height: 236px;
+            background-attachment: scroll;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {
+          #rec367933409 .t396__artboard {}
+          #rec367933409 .t396__filter {}
+          #rec367933409 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1475077923649"] {
+          color: #14a098;
+          text-align: center;
+          z-index: 2;
+          top: 56px;
+          left: calc(50% - 83.5px + -225px);
+          width: 167px;
+          height: 62px;
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1475077923649"] .tn-atom {
+          color: #14a098;
+          font-size: 18px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .tn-elem[data-elem-id="1475077923649"] {
+            top: 93px;
+            left: calc(50% - 83.5px + 0px);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .tn-elem[data-elem-id="1475077923649"] {
+            top: 93px;
+            left: calc(50% - 83.5px + 0px);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .tn-elem[data-elem-id="1475077923649"] {
+            top: 91px;
+            left: calc(50% - 83.5px + 0px);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367933409 .tn-elem[data-elem-id="1634405350134"] {
+          color: #14a098;
+          text-align: center;
+          z-index: 3;
+          top: 56px;
+          left: calc(50% - 95px + -428px);
+          width: 190px;
+          height: 62px;
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1634405350134"] .tn-atom {
+          color: #14a098;
+          font-size: 18px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405350134"] {
+            top: 103pxpx;
+            left: calc(50% - 95px + 10pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405350134"] {
+            top: 103pxpx;
+            left: calc(50% - 95px + 10pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405350134"] {
+            top: 101pxpx;
+            left: calc(50% - 95px + 10pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367933409 .tn-elem[data-elem-id="1634405457662"] {
+          color: #14a098;
+          text-align: center;
+          z-index: 4;
+          top: 56px;
+          left: calc(50% - 108.5px + 221px);
+          width: 217px;
+          height: 62px;
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1634405457662"] .tn-atom {
+          color: #14a098;
+          font-size: 18px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405457662"] {
+            top: 103pxpx;
+            left: calc(50% - 108.5px + 10pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405457662"] {
+            top: 103pxpx;
+            left: calc(50% - 108.5px + 10pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405457662"] {
+            top: 101pxpx;
+            left: calc(50% - 108.5px + 10pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367933409 .tn-elem[data-elem-id="1634405570231"] {
+          color: #000000;
+          text-align: center;
+          z-index: 5;
+          top: 141px;
+          left: calc(50% - 65.5px + -452px);
+          width: 131px;
+          height: 32px;
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1634405570231"] .tn-atom {
+          color: #000000;
+          font-size: 16px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405570231"] {
+            top: 113pxpx;
+            left: calc(50% - 65.5px + 20pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405570231"] {
+            top: 113pxpx;
+            left: calc(50% - 65.5px + 20pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405570231"] {
+            top: 111pxpx;
+            left: calc(50% - 65.5px + 20pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367933409 .tn-elem[data-elem-id="1634405604727"] {
+          color: #000000;
+          text-align: center;
+          z-index: 6;
+          top: 178px;
+          left: calc(50% - 65.5px + -452px);
+          width: 131px;
+          height: 30px;
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1634405604727"] .tn-atom {
+          color: #000000;
+          font-size: 16px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405604727"] {
+            top: 123pxpx;
+            left: calc(50% - 65.5px + 30pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405604727"] {
+            top: 123pxpx;
+            left: calc(50% - 65.5px + 30pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .tn-elem[data-elem-id="1634405604727"] {
+            top: 121pxpx;
+            left: calc(50% - 65.5px + 30pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367933409 .tn-elem[data-elem-id="1634406887105"] {
+          color: #14a098;
+          text-align: center;
+          z-index: 7;
+          top: 56px;
+          left: calc(50% - 83.5px + 440px);
+          width: 167px;
+          height: 62px;
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1634406887105"] .tn-atom {
+          color: #14a098;
+          font-size: 18px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .tn-elem[data-elem-id="1634406887105"] {
+            top: 113pxpx;
+            left: calc(50% - 83.5px + 20pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .tn-elem[data-elem-id="1634406887105"] {
+            top: 113pxpx;
+            left: calc(50% - 83.5px + 20pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .tn-elem[data-elem-id="1634406887105"] {
+            top: 111pxpx;
+            left: calc(50% - 83.5px + 20pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367933409 .tn-elem[data-elem-id="1689407059002"] {
+          color: #000000;
+          text-align: center;
+          z-index: 8;
+          top: 142px;
+          left: calc(50% - 65.5px + -206px);
+          width: 131px;
+          height: 32px;
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1689407059002"] .tn-atom {
+          color: #000000;
+          font-size: 16px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .tn-elem[data-elem-id="1689407059002"] {
+            top: 123pxpx;
+            left: calc(50% - 65.5px + 30pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .tn-elem[data-elem-id="1689407059002"] {
+            top: 123pxpx;
+            left: calc(50% - 65.5px + 30pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .tn-elem[data-elem-id="1689407059002"] {
+            top: 121pxpx;
+            left: calc(50% - 65.5px + 30pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367933409 .tn-elem[data-elem-id="1689407070578"] {
+          color: #000000;
+          text-align: center;
+          z-index: 9;
+          top: 179px;
+          left: calc(50% - 65.5px + -206px);
+          width: 131px;
+          height: 32px;
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1689407070578"] .tn-atom {
+          color: #000000;
+          font-size: 16px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .tn-elem[data-elem-id="1689407070578"] {
+            top: 133pxpx;
+            left: calc(50% - 65.5px + 40pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .tn-elem[data-elem-id="1689407070578"] {
+            top: 133pxpx;
+            left: calc(50% - 65.5px + 40pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .tn-elem[data-elem-id="1689407070578"] {
+            top: 131pxpx;
+            left: calc(50% - 65.5px + 40pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367933409 .tn-elem[data-elem-id="1689421462842"] {
+          color: #14a098;
+          text-align: center;
+          z-index: 10;
+          top: 56px;
+          left: calc(50% - 104px + -15px);
+          width: 208px;
+          height: 62px;
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1689421462842"] .tn-atom {
+          color: #14a098;
+          font-size: 18px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .tn-elem[data-elem-id="1689421462842"] {
+            top: 113pxpx;
+            left: calc(50% - 104px + 20pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .tn-elem[data-elem-id="1689421462842"] {
+            top: 113pxpx;
+            left: calc(50% - 104px + 20pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .tn-elem[data-elem-id="1689421462842"] {
+            top: 111pxpx;
+            left: calc(50% - 104px + 20pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367933409 .tn-elem[data-elem-id="1689421530562"] {
+          color: #000000;
+          text-align: center;
+          z-index: 11;
+          top: 143px;
+          left: calc(50% - 65.5px + 45px);
+          width: 131px;
+          height: 32px;
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1689421530562"] .tn-atom {
+          color: #000000;
+          font-size: 16px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .tn-elem[data-elem-id="1689421530562"] {
+            top: 133pxpx;
+            left: calc(50% - 65.5px + 40pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .tn-elem[data-elem-id="1689421530562"] {
+            top: 133pxpx;
+            left: calc(50% - 65.5px + 40pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .tn-elem[data-elem-id="1689421530562"] {
+            top: 131pxpx;
+            left: calc(50% - 65.5px + 40pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367933409 .tn-elem[data-elem-id="1689421548151"] {
+          color: #000000;
+          text-align: center;
+          z-index: 12;
+          top: 179px;
+          left: calc(50% - 65.5px + 46px);
+          width: 131px;
+          height: 32px;
+        }
+        
+        #rec367933409 .tn-elem[data-elem-id="1689421548151"] .tn-atom {
+          color: #000000;
+          font-size: 16px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367933409 .tn-elem[data-elem-id="1689421548151"] {
+            top: 143pxpx;
+            left: calc(50% - 65.5px + 50pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367933409 .tn-elem[data-elem-id="1689421548151"] {
+            top: 143pxpx;
+            left: calc(50% - 65.5px + 50pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367933409 .tn-elem[data-elem-id="1689421548151"] {
+            top: 141pxpx;
+            left: calc(50% - 65.5px + 50pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+      </style>
+      <div class="t396">
+        <div class="t396__artboard rendered" data-artboard-recid="367933409" data-artboard-screens="320,480,640,960,1200" data-artboard-height="240" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-480="236" data-artboard-height-res-960="240" data-artboard-proxy-min-offset-top="0" data-artboard-proxy-min-height="240" data-artboard-proxy-max-height="240">
+          <div class="t396__carrier" data-artboard-recid="367933409"></div>
+          <div class="t396__filter" data-artboard-recid="367933409"></div>
+          <div class="t396__elem tn-elem tn-elem__3679334091475077923649" data-elem-id="1475077923649" data-elem-type="button" data-field-top-value="56" data-field-left-value="-225" data-field-height-value="62" data-field-width-value="167" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="91" data-field-left-res-480-value="0" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="93" data-field-left-res-640-value="0" data-field-top-res-960-value="93" data-field-left-res-960-value="0" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 56px; left: 651.5px; width: 167px; height: 62px;"><a class="tn-atom" href="https://www.google.com/">Для учеников</a></div>
+          <div class="t396__elem tn-elem tn-elem__3679334091634405350134" data-elem-id="1634405350134" data-elem-type="button" data-field-top-value="56" data-field-left-value="-428" data-field-height-value="62" data-field-width-value="190" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="101px" data-field-left-res-480-value="10px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="103px" data-field-left-res-640-value="10px" data-field-top-res-960-value="103px" data-field-left-res-960-value="10px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 56px; left: 437px; width: 190px; height: 62px;"><a class="tn-atom" href="https://www.google.com/">Проектная деятельность</a></div>
+          <div class="t396__elem tn-elem tn-elem__3679334091634405457662" data-elem-id="1634405457662" data-elem-type="button" data-field-top-value="56" data-field-left-value="221" data-field-height-value="62" data-field-width-value="217" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="101px" data-field-left-res-480-value="10px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="103px" data-field-left-res-640-value="10px" data-field-top-res-960-value="103px" data-field-left-res-960-value="10px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 56px; left: 1072.5px; width: 217px; height: 62px;"><a class="tn-atom" href="https://www.google.com/">Духовное здоровье</a></div>
+          <div class="t396__elem tn-elem tn-elem__3679334091634405570231" data-elem-id="1634405570231" data-elem-type="button" data-field-top-value="141" data-field-left-value="-452" data-field-height-value="32" data-field-width-value="131" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="111px" data-field-left-res-480-value="20px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="113px" data-field-left-res-640-value="20px" data-field-top-res-960-value="113px" data-field-left-res-960-value="20px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 141px; left: 442.5px; width: 131px; height: 32px;"><a class="tn-atom" href="{% url 'base:projects' %}">Проекты/Статьи</a></div>
+          <div class="t396__elem tn-elem tn-elem__3679334091634405604727" data-elem-id="1634405604727" data-elem-type="button" data-field-top-value="178" data-field-left-value="-452" data-field-height-value="30" data-field-width-value="131" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="121px" data-field-left-res-480-value="30px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="123px" data-field-left-res-640-value="30px" data-field-top-res-960-value="123px" data-field-left-res-960-value="30px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 178px; left: 442.5px; width: 131px; height: 30px;"><a class="tn-atom" href="https://tilda.cc/page/?pageid=22780450">Идеи</a></div>
+          <div class="t396__elem tn-elem tn-elem__3679334091634406887105" data-elem-id="1634406887105" data-elem-type="button" data-field-top-value="56" data-field-left-value="440" data-field-height-value="62" data-field-width-value="167" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="111px" data-field-left-res-480-value="20px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="113px" data-field-left-res-640-value="20px" data-field-top-res-960-value="113px" data-field-left-res-960-value="20px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 56px; left: 1316.5px; width: 167px; height: 62px;"><a class="tn-atom" href="{% url 'base:profile' %}">Личный кабинет</a></div>
+          <div class="t396__elem tn-elem tn-elem__3679334091689407059002" data-elem-id="1689407059002" data-elem-type="button" data-field-top-value="142" data-field-left-value="-206" data-field-height-value="32" data-field-width-value="131" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="121px" data-field-left-res-480-value="30px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="123px" data-field-left-res-640-value="30px" data-field-top-res-960-value="123px" data-field-left-res-960-value="30px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 142px; left: 688.5px; width: 131px; height: 32px;"><a class="tn-atom" href="https://tilda.cc/page/?pageid=22780450">Клубы</a></div>
+          <div class="t396__elem tn-elem tn-elem__3679334091689407070578" data-elem-id="1689407070578" data-elem-type="button" data-field-top-value="179" data-field-left-value="-206" data-field-height-value="32" data-field-width-value="131" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="131px" data-field-left-res-480-value="40px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="133px" data-field-left-res-640-value="40px" data-field-top-res-960-value="133px" data-field-left-res-960-value="40px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 179px; left: 688.5px; width: 131px; height: 32px;"><a class="tn-atom" href="https://tilda.cc/page/?pageid=22780450">Вакансии</a></div>
+          <div class="t396__elem tn-elem tn-elem__3679334091689421462842" data-elem-id="1689421462842" data-elem-type="button" data-field-top-value="56" data-field-left-value="-15" data-field-height-value="62" data-field-width-value="208" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="111px" data-field-left-res-480-value="20px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="113px" data-field-left-res-640-value="20px" data-field-top-res-960-value="113px" data-field-left-res-960-value="20px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 56px; left: 841px; width: 208px; height: 62px;"><a class="tn-atom" href="https://www.google.com/">Поступление в ВУЗ</a></div>
+          <div class="t396__elem tn-elem tn-elem__3679334091689421530562" data-elem-id="1689421530562" data-elem-type="button" data-field-top-value="143" data-field-left-value="45" data-field-height-value="32" data-field-width-value="131" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="131px" data-field-left-res-480-value="40px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="133px" data-field-left-res-640-value="40px" data-field-top-res-960-value="133px" data-field-left-res-960-value="40px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 143px; left: 939.5px; width: 131px; height: 32px;"><a class="tn-atom" href="{% url 'base:ege_tasks' %}">Задания ЕГЭ</a></div>
+          <div class="t396__elem tn-elem tn-elem__3679334091689421548151" data-elem-id="1689421548151" data-elem-type="button" data-field-top-value="179" data-field-left-value="46" data-field-height-value="32" data-field-width-value="131" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="141px" data-field-left-res-480-value="50px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="143px" data-field-left-res-640-value="50px" data-field-top-res-960-value="143px" data-field-left-res-960-value="50px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 179px; left: 940.5px; width: 131px; height: 32px;"><a class="tn-atom" href="{% url 'base:ege_dop' %}">Доп баллы</a></div>
+        </div>
+      </div>
+      <script>
+        t_onReady(function() {
+          t_onFuncLoad('t396_init', function() {
+            t396_init('367933409');
+          });
+        });
+      </script>
+      <!-- /T396 -->
+    </div>
+    <div id="rec367859109" class="r t-rec" style="background-color:#ffffff; " data-animationappear="off" data-record-type="396" data-bg-color="#ffffff">
+      <!-- T396 -->
+      <style>
+        #rec367859109 .t396__artboard {
+          min-height: 550px;
+          height: 100vh;
+          background-color: #ffffff;
+        }
+        
+        #rec367859109 .t396__filter {
+          min-height: 550px;
+          height: 100vh;
+          background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(177, 173, 173, 0.7)), to(rgba(0, 0, 0, 0.7)));
+          background-image: -webkit-linear-gradient(top, rgba(177, 173, 173, 0.7), rgba(0, 0, 0, 0.7));
+          background-image: linear-gradient(to bottom, rgba(177, 173, 173, 0.7), rgba(0, 0, 0, 0.7));
+          will-change: transform;
+        }
+        
+        #rec367859109 .t396__carrier {
+          min-height: 550px;
+          height: 100vh;
+          background-position: center center;
+          background-attachment: scroll;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367859109 .t396__artboard {}
+          #rec367859109 .t396__filter {}
+          #rec367859109 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367859109 .t396__artboard {}
+          #rec367859109 .t396__filter {}
+          #rec367859109 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367859109 .t396__artboard {}
+          #rec367859109 .t396__filter {}
+          #rec367859109 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {
+          #rec367859109 .t396__artboard {}
+          #rec367859109 .t396__filter {}
+          #rec367859109 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+        
+        #rec367859109 .tn-elem[data-elem-id="1689407556569"] {
+          z-index: 2;
+          top: calc(50vh - 275px + -50px);
+          left: calc(50% - 600px + -100px);
+          width: 975px;
+        }
+        
+        #rec367859109 .tn-elem[data-elem-id="1689407556569"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        
+        @media screen and (max-width: 1199px) {}
+        
+        @media screen and (max-width: 959px) {}
+        
+        @media screen and (max-width: 639px) {}
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367859109 .tn-elem[data-elem-id="1689408087324"] {
+          z-index: 3;
+          top: calc(50vh - 275px + -17px);
+          left: calc(50% - 600px + -42px);
+          width: 841px;
+          height: 198px;
+        }
+        
+        #rec367859109 .tn-elem[data-elem-id="1689408087324"] .tn-atom {
+          border-radius: 5px;
+          opacity: 0.45;
+          background-color: #05ff9d;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        
+        @media screen and (max-width: 1199px) {}
+        
+        @media screen and (max-width: 959px) {}
+        
+        @media screen and (max-width: 639px) {}
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec367859109 .tn-elem[data-elem-id="1470209944682"] {
+          color: #ffffff;
+          text-align: center;
+          z-index: 4;
+          top: calc(50vh - 0px + -187px);
+          left: calc(50% - 580px + -228px);
+          width: 1160px;
+        }
+        
+        #rec367859109 .tn-elem[data-elem-id="1470209944682"] .tn-atom {
+          color: #ffffff;
+          font-size: 104px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 0.95;
+          font-weight: 700;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367859109 .tn-elem[data-elem-id="1470209944682"] {
+            top: calc(275px - 0px + -41px);
+            left: calc(50% - 580px + 0px);
+            width: 940px;
+          }
+          #rec367859109 .tn-elem[data-elem-id="1470209944682"] .tn-atom {
+            font-size: 104px;
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367859109 .tn-elem[data-elem-id="1470209944682"] {
+            top: calc(275px - 0px + -32px);
+            left: calc(50% - 580px + 0px);
+            width: 620px;
+          }
+          #rec367859109 .tn-elem[data-elem-id="1470209944682"] .tn-atom {
+            font-size: 70px;
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367859109 .tn-elem[data-elem-id="1470209944682"] {
+            top: calc(275px - 0px + -55px);
+            left: calc(50% - 580px + 0px);
+            width: 460px;
+          }
+          #rec367859109 .tn-elem[data-elem-id="1470209944682"] .tn-atom {
+            font-size: 34px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {
+          #rec367859109 .tn-elem[data-elem-id="1470209944682"] {
+            top: calc(275px - 0px + -50px);
+            left: calc(50% - 580px + 0px);
+            width: 300px;
+          }
+          #rec367859109 .tn-elem[data-elem-id="1470209944682"] .tn-atom {
+            font-size: 34px;
+          }
+        }
+        
+        #rec367859109 .tn-elem[data-elem-id="1470210011265"] {
+          color: #ffffff;
+          text-align: center;
+          z-index: 5;
+          top: calc(50vh - 0px + 299px);
+          left: calc(50% - 365px + 3px);
+          width: 730px;
+        }
+        
+        #rec367859109 .tn-elem[data-elem-id="1470210011265"] .tn-atom {
+          color: #ffffff;
+          font-size: 20px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.5;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec367859109 .tn-elem[data-elem-id="1470210011265"] {
+            top: calc(275px - 0px + 113.5px);
+            left: calc(50% - 365px + 0px);
+            width: 510px;
+          }
+          #rec367859109 .tn-elem[data-elem-id="1470210011265"] .tn-atom {
+            font-size: 18px;
+            line-height: 1.55;
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec367859109 .tn-elem[data-elem-id="1470210011265"] {
+            top: calc(275px - 0px + 82px);
+            left: calc(50% - 365px + 0px);
+            width: 620px;
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec367859109 .tn-elem[data-elem-id="1470210011265"] {
+            top: calc(275px - 0px + 53px);
+            left: calc(50% - 365px + 0px);
+            width: 420px;
+          }
+          #rec367859109 .tn-elem[data-elem-id="1470210011265"] .tn-atom {
+            font-size: 16px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {
+          #rec367859109 .tn-elem[data-elem-id="1470210011265"] {
+            top: calc(275px - 0px + 70px);
+            left: calc(50% - 365px + 0px);
+            width: 300px;
+          }
+        }
+        
+        #rec367859109 .tn-elem[data-elem-id="1689408536009"] {
+          color: #000000;
+          z-index: 6;
+          top: calc(50vh - 275px + 57px);
+          left: calc(50% - 600px + 908px);
+          width: 273px;
+        }
+        
+        #rec367859109 .tn-elem[data-elem-id="1689408536009"] .tn-atom {
+          color: #000000;
+          font-size: 20px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        
+        @media screen and (max-width: 1199px) {}
+        
+        @media screen and (max-width: 959px) {}
+        
+        @media screen and (max-width: 639px) {}
+        
+        @media screen and (max-width: 479px) {}
+      </style>
+      <div class="t396">
+        <div class="t396__artboard rendered" data-artboard-recid="367859109" data-artboard-screens="320,480,640,960,1200" data-artboard-height="550" data-artboard-valign="center" data-artboard-height_vh="100" data-artboard-upscale="grid" data-artboard-proxy-min-offset-top="157.5" data-artboard-proxy-min-height="550" data-artboard-proxy-max-height="865">
+          <div class="t396__carrier" data-artboard-recid="367859109"></div>
+          <div class="t396__filter" data-artboard-recid="367859109"></div>
+          <div class="t396__elem tn-elem tn-elem__3678591091689407556569" data-elem-id="1689407556569" data-elem-type="image" data-field-top-value="-50" data-field-left-value="-100" data-field-width-value="975" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="1170" data-field-fileheight-value="780" data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits" style="left: 260px; top: 107.5px; width: 975px;">
+            <div class="tn-atom"><img class="tn-atom__img t-img loaded" data-original="https://static.tildacdn.info/lib/unsplash/5e36da46-fbf0-db19-8e9d-9b0ab81f1522/photo.jpg" imgfield="tn_img_1689407556569" src="./static/main_files/photo.jpg"></div>
+          </div>
+          <div class="t396__elem tn-elem tn-elem__3678591091689408087324" data-elem-id="1689408087324" data-elem-type="shape" data-field-top-value="-17" data-field-left-value="-42" data-field-height-value="198" data-field-width-value="841" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits" style="width: 841px; left: 318px; top: 140.5px; height: 198px;">
+            <div class="tn-atom"></div>
+          </div>
+          <div class="t396__elem tn-elem tn-elem__3678591091470209944682" data-elem-id="1470209944682" data-elem-type="text" data-field-top-value="-187" data-field-left-value="-228" data-field-width-value="1160" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="-50" data-field-left-res-320-value="0" data-field-width-res-320-value="300" data-field-top-res-480-value="-55" data-field-left-res-480-value="0" data-field-width-res-480-value="460" data-field-top-res-640-value="-32" data-field-left-res-640-value="0" data-field-width-res-640-value="620" data-field-top-res-960-value="-41" data-field-left-res-960-value="0" data-field-width-res-960-value="940" data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits" style="top: 146.5px; left: 152px; width: 1160px;">
+            <div class="tn-atom" field="tn_text_1470209944682" style="line-height: 99px;">ИНЖЕНЕРНАЯ ШКОЛА</div>
+          </div>
+          <div class="t396__elem tn-elem tn-elem__3678591091470210011265" data-elem-id="1470210011265" data-elem-type="text" data-field-top-value="299" data-field-left-value="3" data-field-width-value="730" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-top-res-320-value="70" data-field-left-res-320-value="0" data-field-width-res-320-value="300" data-field-top-res-480-value="53" data-field-left-res-480-value="0" data-field-width-res-480-value="420" data-field-top-res-640-value="82" data-field-left-res-640-value="0" data-field-width-res-640-value="620" data-field-top-res-960-value="113.5" data-field-left-res-960-value="0" data-field-width-res-960-value="510" data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits" style="top: 716.5px; left: 598px; width: 730px;">
+            <div class="tn-atom" field="tn_text_1470210011265" style="line-height: 30px;">Далее идет ее презентация и возможности</div>
+          </div>
+          <div class="t396__elem tn-elem tn-elem__3678591091689408536009" data-elem-id="1689408536009" data-elem-type="text" data-field-top-value="57" data-field-left-value="908" data-field-width-value="273" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits" style="top: 214.5px; left: 1268px; width: 273px;">
+            <div class="tn-atom" field="tn_text_1689408536009" style="line-height: 31px;">Good design is obvious. Great design is transparent.</div>
+          </div>
+        </div>
+      </div>
+      <script>
+        t_onReady(function() {
+          t_onFuncLoad('t396_init', function() {
+            t396_init('367859109');
+          });
+        });
+      </script>
+      <!-- /T396 -->
+    </div>
+    <div id="rec616525284" class="r t-rec" style=" " data-animationappear="off" data-record-type="396">
+      <!-- T396 -->
+      <style>
+        #rec616525284 .t396__artboard {
+          height: 550px;
+          background-color: #ffffff;
+        }
+        
+        #rec616525284 .t396__filter {
+          height: 550px;
+        }
+        
+        #rec616525284 .t396__carrier {
+          height: 550px;
+          background-position: center center;
+          background-attachment: scroll;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec616525284 .t396__artboard {}
+          #rec616525284 .t396__filter {}
+          #rec616525284 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec616525284 .t396__artboard {}
+          #rec616525284 .t396__filter {}
+          #rec616525284 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec616525284 .t396__artboard {}
+          #rec616525284 .t396__filter {}
+          #rec616525284 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {
+          #rec616525284 .t396__artboard {}
+          #rec616525284 .t396__filter {}
+          #rec616525284 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+        
+        #rec616525284 .tn-elem[data-elem-id="1470210224069"] {
+          z-index: 2;
+          top: 255px;
+          left: calc(50% - 600px + 750px);
+          width: 100px;
+          height: 100px;
+        }
+        
+        #rec616525284 .tn-elem[data-elem-id="1470210224069"] .tn-atom {
+          background-color: #fff705;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        
+        @media screen and (max-width: 1199px) {}
+        
+        @media screen and (max-width: 959px) {}
+        
+        @media screen and (max-width: 639px) {}
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec616525284 .tn-elem[data-elem-id="1470209944682"] {
+          color: #000000;
+          z-index: 3;
+          top: 60px;
+          left: calc(50% - 600px + 20px);
+          width: 660px;
+        }
+        
+        #rec616525284 .tn-elem[data-elem-id="1470209944682"] .tn-atom {
+          color: #000000;
+          font-size: 100px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1;
+          font-weight: 700;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        
+        @media screen and (max-width: 1199px) {}
+        
+        @media screen and (max-width: 959px) {}
+        
+        @media screen and (max-width: 639px) {}
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec616525284 .tn-elem[data-elem-id="1470210011265"] {
+          color: #000000;
+          z-index: 4;
+          top: 65px;
+          left: calc(50% - 600px + 780px);
+          width: 410px;
+        }
+        
+        #rec616525284 .tn-elem[data-elem-id="1470210011265"] .tn-atom {
+          color: #000000;
+          font-size: 20px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        
+        @media screen and (max-width: 1199px) {}
+        
+        @media screen and (max-width: 959px) {}
+        
+        @media screen and (max-width: 639px) {}
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec616525284 .tn-elem[data-elem-id="1470210033144"] {
+          z-index: 5;
+          top: 215px;
+          left: calc(50% - 600px + 780px);
+          width: 160px;
+        }
+        
+        #rec616525284 .tn-elem[data-elem-id="1470210033144"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        
+        @media screen and (max-width: 1199px) {}
+        
+        @media screen and (max-width: 959px) {}
+        
+        @media screen and (max-width: 639px) {}
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec616525284 .tn-elem[data-elem-id="1470210128180"] {
+          color: #000000;
+          z-index: 6;
+          top: 470px;
+          left: calc(50% - 600px + 780px);
+          width: 190px;
+        }
+        
+        #rec616525284 .tn-elem[data-elem-id="1470210128180"] .tn-atom {
+          color: #000000;
+          font-size: 18px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          opacity: 0.2;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+        
+        @media screen and (max-width: 1199px) {}
+        
+        @media screen and (max-width: 959px) {}
+        
+        @media screen and (max-width: 639px) {}
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec616525284 .tn-elem[data-elem-id="1689407359524"] {
+          color: #000000;
+          text-align: center;
+          z-index: 7;
+          top: 206px;
+          left: calc(50% - 65.5px + -459px);
+          width: 131px;
+          height: 32px;
+        }
+        
+        #rec616525284 .tn-elem[data-elem-id="1689407359524"] .tn-atom {
+          color: #000000;
+          font-size: 16px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec616525284 .tn-elem[data-elem-id="1689407359524"] {
+            top: 123pxpx;
+            left: calc(50% - 65.5px + 30pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec616525284 .tn-elem[data-elem-id="1689407359524"] {
+            top: 123pxpx;
+            left: calc(50% - 65.5px + 30pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec616525284 .tn-elem[data-elem-id="1689407359524"] {
+            top: 121pxpx;
+            left: calc(50% - 65.5px + 30pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+        
+        #rec616525284 .tn-elem[data-elem-id="1689407383797"] {
+          color: #000000;
+          text-align: center;
+          z-index: 8;
+          top: 254px;
+          left: calc(50% - 65.5px + -456px);
+          width: 131px;
+          height: 32px;
+        }
+        
+        #rec616525284 .tn-elem[data-elem-id="1689407383797"] .tn-atom {
+          color: #000000;
+          font-size: 16px;
+          font-family: 'Arial', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 600;
+          border-width: 3px;
+          background-position: center center;
+          border-color: #000000;
+          border-style: solid;
+          transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          #rec616525284 .tn-elem[data-elem-id="1689407383797"] {
+            top: 133pxpx;
+            left: calc(50% - 65.5px + 40pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 959px) {
+          #rec616525284 .tn-elem[data-elem-id="1689407383797"] {
+            top: 133pxpx;
+            left: calc(50% - 65.5px + 40pxpx);
+          }
+        }
+        
+        @media screen and (max-width: 639px) {
+          #rec616525284 .tn-elem[data-elem-id="1689407383797"] {
+            top: 131pxpx;
+            left: calc(50% - 65.5px + 40pxpx);
+            width: 140px;
+            height: 55px;
+          }
+        }
+        
+        @media screen and (max-width: 479px) {}
+      </style>
+      <div class="t396">
+        <div class="t396__artboard rendered" data-artboard-recid="616525284" data-artboard-screens="320,480,640,960,1200" data-artboard-height="550" data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-proxy-min-offset-top="0" data-artboard-proxy-min-height="550" data-artboard-proxy-max-height="550">
+          <div class="t396__carrier" data-artboard-recid="616525284"></div>
+          <div class="t396__filter" data-artboard-recid="616525284"></div>
+          <div class="t396__elem tn-elem tn-elem__6165252841470210224069" data-elem-id="1470210224069" data-elem-type="shape" data-field-top-value="255" data-field-left-value="750" data-field-height-value="100" data-field-width-value="100" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-fields="width,height,top,left,container,axisx,axisy,widthunits,heightunits,leftunits,topunits" style="width: 100px; left: 1110px; top: 255px; height: 100px;">
+            <div class="tn-atom"></div>
+          </div>
+          <div class="t396__elem tn-elem tn-elem__6165252841470209944682" data-elem-id="1470209944682" data-elem-type="text" data-field-top-value="60" data-field-left-value="20" data-field-width-value="660" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits" style="top: 60px; left: 380px; width: 660px;">
+            <div class="tn-atom" field="tn_text_1470209944682" style="line-height: 100px;">Zero Block</div>
+          </div>
+          <div class="t396__elem tn-elem tn-elem__6165252841470210011265" data-elem-id="1470210011265" data-elem-type="text" data-field-top-value="65" data-field-left-value="780" data-field-width-value="410" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits" style="top: 65px; left: 1140px; width: 410px;">
+            <div class="tn-atom" field="tn_text_1470210011265" style="line-height: 31px;">Click "Block Editor" to enter the edit mode. Use layers, shapes and customize adaptability. Everything is in your hands.</div>
+          </div>
+          <div class="t396__elem tn-elem tn-elem__6165252841470210033144" data-elem-id="1470210033144" data-elem-type="image" data-field-top-value="215" data-field-left-value="780" data-field-width-value="160" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="145" data-field-fileheight-value="92" data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits" style="left: 1140px; top: 215px; width: 160px;">
+            <div class="tn-atom"><img class="tn-atom__img t-img loaded" data-original="https://static.tildacdn.info/tild3066-6131-4038-b164-336135646563/bz1.svg" imgfield="tn_img_1470210033144" src="./static/main_files/bz1.svg"></div>
+          </div>
+          <div class="t396__elem tn-elem tn-elem__6165252841470210128180" data-elem-id="1470210128180" data-elem-type="text" data-field-top-value="470" data-field-left-value="780" data-field-width-value="190" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits" style="top: 470px; left: 1140px; width: 190px;">
+            <div class="tn-atom" field="tn_text_1470210128180" style="line-height: 28px;">Tilda Publishing
+              <br>
+            </div>
+          </div>
+          <div class="t396__elem tn-elem tn-elem__6165252841689407359524" data-elem-id="1689407359524" data-elem-type="button" data-field-top-value="206" data-field-left-value="-459" data-field-height-value="32" data-field-width-value="131" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="121px" data-field-left-res-480-value="30px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="123px" data-field-left-res-640-value="30px" data-field-top-res-960-value="123px" data-field-left-res-960-value="30px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 206px; left: 435.5px; width: 131px; height: 32px;"><a class="tn-atom" href="https://tilda.cc/page/?pageid=22780450">Контакты</a></div>
+          <div class="t396__elem tn-elem tn-elem__6165252841689407383797" data-elem-id="1689407383797" data-elem-type="button" data-field-top-value="254" data-field-left-value="-456" data-field-height-value="32" data-field-width-value="131" data-field-axisy-value="top" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="px" data-field-widthunits-value="px" data-field-top-res-480-value="131px" data-field-left-res-480-value="40px" data-field-height-res-480-value="55" data-field-width-res-480-value="140" data-field-top-res-640-value="133px" data-field-left-res-640-value="40px" data-field-top-res-960-value="133px" data-field-left-res-960-value="40px" data-fields="top,left,width,height,container,axisx,axisy,caption,leftunits,topunits" style="top: 254px; left: 438.5px; width: 131px; height: 32px;"><a class="tn-atom" href="https://tilda.cc/page/?pageid=22780450">Контакты</a></div>
+        </div>
+      </div>
+      <script>
+        t_onReady(function() {
+          t_onFuncLoad('t396_init', function() {
+            t396_init('616525284');
+          });
+        });
+      </script>
+      <!-- /T396 -->
+    </div>
+    <div id="rec367944081" class="r t-rec t-rec_pt_90 t-rec_pb_90" style="padding-top:90px;padding-bottom:90px; " data-animationappear="off" data-record-type="670">
+      <!-- t670 -->
+      <div class="t670">
+        <div class="t-slds" style="">
+          <div class="t-container t-slds__main" style="touch-action: pan-y;">
+            <ul class="t-slds__arrow_container t-slds__arrow_container-outside" style="max-width: 1060px;">
+              <li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left" style="height: 550px;">
+                <button type="button" class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg" aria-controls="carousel_367944081" aria-disabled="false" aria-label="Previous slide" style="width: 40px; height: 40px; background-color: rgb(232, 232, 232); margin-top: 0px;">
+                  <div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 9px;">
+                    <svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+                      <polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline>
+                    </svg>
+                  </div>
+                </button>
+              </li>
+              <li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right" style="height: 550px;">
+                <button type="button" class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg" aria-controls="carousel_367944081" aria-disabled="false" aria-label="Next slide" style="width: 40px; height: 40px; background-color: rgb(232, 232, 232); margin-top: 0px;">
+                  <div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 9px;">
+                    <svg role="presentation" focusable="false" style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+                      <polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline>
+                    </svg>
+                  </div>
+                </button>
+              </li>
+            </ul>
+            <div class="t-slds__container t-width t-width_9 t-margin_auto">
+              <ul class="t-slds__items-wrapper t-slds__witharrows t-slds_animated-none" id="carousel_367944081" data-slider-transition="300" data-slider-with-cycle="true" data-slider-correct-height="true" data-auto-correct-mobile-width="false" data-slider-arrows-nearpic="yes" aria-live="off" data-slider-initialized="true" data-slider-totalslides="4" data-slider-pos="1" data-slider-curr-pos="1" data-slider-cycle="" data-slider-animated="" style="width: 5160px; height: 550px; transform: translateX(-860px);" data-swiper-initialized="true" data-slider-stopped="yes">
+                <li class="t-slds__item t-slds__item-loaded" data-slide-index="0" role="group" aria-roledescription="slide" aria-label="4 of 4" aria-hidden="true" style="width: 860px;">
+                  <div class="t-width t-width_9 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <div class="t-slds__wrapper t-align_center">
+                      <meta itemprop="image" content="https://static.tildacdn.info/tild3432-3430-4661-b861-633639383164/samuelzeller168234.jpg">
+                      <div class="t670__imgwrapper" bgimgfield="gi_img__3">
+                        <div class="t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.info/tild3432-3430-4661-b861-633639383164/samuelzeller168234.jpg" style="background-image: url('https://static.tildacdn.info/tild3432-3430-4661-b861-633639383164/-/resizeb/20x/samuelzeller168234.jpg');"></div>
+                        <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550" style="padding-bottom: 63.9535%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="t-slds__item t-slds__item_active t-slds__item-loaded" data-slide-index="1" role="group" aria-roledescription="slide" aria-label="1 of 4" style="width: 860px;">
+                  <div class="t-width t-width_9 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <div class="t-slds__wrapper t-align_center">
+                      <meta itemprop="image" content="https://static.tildacdn.info/tild3437-3839-4037-b639-643935383936/jorgenhaland101813.jpg">
+                      <div class="t670__imgwrapper" bgimgfield="gi_img__0">
+                        <div class="t-slds__bgimg t-bgimg loaded" data-original="https://static.tildacdn.info/tild3437-3839-4037-b639-643935383936/jorgenhaland101813.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild3437-3839-4037-b639-643935383936/-/cover/860x550/center/center/-/format/webp/jorgenhaland101813.jpg&quot;);"></div>
+                        <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550" style="padding-bottom: 63.9535%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="t-slds__item t-slds__item-loaded" data-slide-index="2" role="group" aria-roledescription="slide" aria-label="2 of 4" style="width: 860px;">
+                  <div class="t-width t-width_9 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <div class="t-slds__wrapper t-align_center">
+                      <meta itemprop="image" content="https://static.tildacdn.info/tild6637-6131-4438-a662-626134663032/cherrylaithang138648.jpg">
+                      <div class="t670__imgwrapper" bgimgfield="gi_img__1">
+                        <div class="t-slds__bgimg t-bgimg loaded" data-original="https://static.tildacdn.info/tild6637-6131-4438-a662-626134663032/cherrylaithang138648.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild6637-6131-4438-a662-626134663032/-/cover/860x550/center/center/-/format/webp/cherrylaithang138648.jpg&quot;);"></div>
+                        <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550" style="padding-bottom: 63.9535%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="t-slds__item" data-slide-index="3" role="group" aria-roledescription="slide" aria-label="3 of 4" style="width: 860px;">
+                  <div class="t-width t-width_9 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <div class="t-slds__wrapper t-align_center">
+                      <meta itemprop="image" content="https://static.tildacdn.info/tild3966-3235-4563-b465-373632393036/chrisbarbalis223997.jpg">
+                      <div class="t670__imgwrapper" bgimgfield="gi_img__2">
+                        <div class="t-slds__bgimg t-bgimg loaded" data-original="https://static.tildacdn.info/tild3966-3235-4563-b465-373632393036/chrisbarbalis223997.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild3966-3235-4563-b465-373632393036/-/cover/860x550/center/center/-/format/webp/chrisbarbalis223997.jpg&quot;);"></div>
+                        <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550" style="padding-bottom: 63.9535%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="t-slds__item t-slds__item-loaded" data-slide-index="4" role="group" aria-roledescription="slide" aria-label="4 of 4" style="width: 860px;">
+                  <div class="t-width t-width_9 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <div class="t-slds__wrapper t-align_center">
+                      <meta itemprop="image" content="https://static.tildacdn.info/tild3432-3430-4661-b861-633639383164/samuelzeller168234.jpg">
+                      <div class="t670__imgwrapper" bgimgfield="gi_img__3">
+                        <div class="t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.info/tild3432-3430-4661-b861-633639383164/samuelzeller168234.jpg" style="background-image: url('https://static.tildacdn.info/tild3432-3430-4661-b861-633639383164/-/resizeb/20x/samuelzeller168234.jpg');"></div>
+                        <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550" style="padding-bottom: 63.9535%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="t-slds__item" data-slide-index="5" role="group" aria-roledescription="slide" aria-label="1 of 4" aria-hidden="true" style="width: 860px;">
+                  <div class="t-width t-width_9 t-margin_auto" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <div class="t-slds__wrapper t-align_center">
+                      <meta itemprop="image" content="https://static.tildacdn.info/tild3437-3839-4037-b639-643935383936/jorgenhaland101813.jpg">
+                      <div class="t670__imgwrapper" bgimgfield="gi_img__0">
+                        <div class="t-slds__bgimg t-bgimg" data-original="https://static.tildacdn.info/tild3437-3839-4037-b639-643935383936/jorgenhaland101813.jpg" style="background-image: url('https://static.tildacdn.info/tild3437-3839-4037-b639-643935383936/-/resizeb/20x/jorgenhaland101813.jpg');"></div>
+                        <div class="t670__separator" data-slider-image-width="860" data-slider-image-height="550" style="padding-bottom: 63.9535%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <ul class="t-slds__bullet_wrapper">
+              <li class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1">
+                <button type="button" class="t-slds__bullet_body" aria-label="Go to slide 1" style="background-color: #c7c7c7;"></button>
+              </li>
+              <li class="t-slds__bullet " data-slide-bullet-for="2">
+                <button type="button" class="t-slds__bullet_body" aria-label="Go to slide 2" style="background-color: #c7c7c7;"></button>
+              </li>
+              <li class="t-slds__bullet " data-slide-bullet-for="3">
+                <button type="button" class="t-slds__bullet_body" aria-label="Go to slide 3" style="background-color: #c7c7c7;"></button>
+              </li>
+              <li class="t-slds__bullet " data-slide-bullet-for="4">
+                <button type="button" class="t-slds__bullet_body" aria-label="Go to slide 4" style="background-color: #c7c7c7;"></button>
+              </li>
+            </ul>
+            <div class="t-slds__caption__container"></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        t_onReady(function() {
+          setTimeout(function() {
+            t_onFuncLoad('t670_init', function() {
+              t670_init('367944081');
+            });
+            t_onFuncLoad('t_sldsInit', function() {
+              t_sldsInit('367944081');
+            });
+          }, 500);
+          var rec = document.querySelector('#rec367944081');
+          if (rec) {
+            var wrapper = rec.querySelector('.t670');
+            if (wrapper) {
+              wrapper.addEventListener('displayChanged', function() {
+                t_onFuncLoad('t_slds_updateSlider', function() {
+                  t_slds_updateSlider('367944081');
+                });
+                t_onFuncLoad('t_slds_positionArrows', function() {
+                  t_slds_positionArrows('367944081');
+                });
+              });
+            }
+          }
+        });
+      </script>
+      <style>
+        #rec367944081 .t-slds__bullet_active .t-slds__bullet_body {
+          background-color: #222 !important;
+        }
+        
+        #rec367944081 .t-slds__bullet:hover .t-slds__bullet_body {
+          background-color: #222 !important;
+        }
+      </style>
+    </div>
+  </div>
+  <!--/allrecords-->
+  <!-- Tilda copyright. Don't remove this line -->
+  <!-- Stat -->
+  <script type="text/javascript">
+    if (!window.mainTracker) {
+      window.mainTracker = 'tilda';
+    }
+    setTimeout(function() {
+      (function(d, w, k, o, g) {
+        var n = d.getElementsByTagName(o)[0],
+          s = d.createElement(o),
+          f = function() {
+            n.parentNode.insertBefore(s, n);
+          };
+        s.type = "text/javascript";
+        s.async = true;
+        s.key = k;
+        s.id = "tildastatscript";
+        s.src = g;
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+          f();
+        }
+      })(document, window, 'a050cdf7f960b5afc3a12e27c51613dc', 'script', 'https://static.tildacdn.info/js/tilda-stat-1.0.min.js');
+    }, 2000);
+  </script>
+  <script async="" type="text/javascript" src="./static/main_files/tilda-performance-1.0.min.js"></script>
+</body>
+
+</html>

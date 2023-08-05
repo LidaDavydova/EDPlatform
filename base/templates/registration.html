@@ -1,0 +1,102 @@
+<!doctype html>
+{% load static %}
+<html lang="ru">
+<head>
+  <title>{% block title %}Registration{% endblock %}</title>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.esm.min.js" integrity="sha384-sKZy8g2KJhBTFCD6cIg8d4EifJxaa8c/iYIERdeKorHWhAgZgQOfqOKMe3xBqye1" crossorigin="anonymous"></script>
+    <!-- Required meta tags  <link rel="stylesheet" href="{% static 'base.css' %}" type="text/css">-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+
+</head>
+
+<style>
+    label {
+        margin-left: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row " style="margin: auto;">
+            <h1 class="row mx-auto" >Регистрация</h1>
+            <form method="post" class="col align-self-center s6" style="margin: auto;">
+                {% csrf_token %}
+                <div class="row mx-auto" >
+                    <div class="input-field col s6 align-self-center" >
+                        <input type="text" name="name" class="t-input js-tilda-rule mx-auto" data-tilda-req="1" aria-required="true" data-tilda-rule="url" style="color:#000000;border:1px solid #000000;">
+                        <label>Имя</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 align-self-center">
+                        <input type="text" name="surname" class="t-input js-tilda-rule " data-tilda-req="1" aria-required="true" data-tilda-rule="url" style="color:#000000;border:1px solid #000000;">
+                      
+                        <label>Фамилия</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 align-self-center">
+                        <input type="text" name="grade" class="t-input js-tilda-rule " data-tilda-req="1" aria-required="true" data-tilda-rule="url" style="color:#000000;border:1px solid #000000;">
+                      
+                        <label>Класс</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col align-self-center s6">
+                        <input type="text" name="alias" placeholder="ссылка на Telegram" class="t-input js-tilda-rule " data-tilda-req="1" aria-required="true" data-tilda-rule="url" style="color:#000000;border:1px solid #000000;">
+                      
+                        <label>Alias</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col align-self-center s6">
+                        <input type="password" name="password1" class="t-input js-tilda-rule " data-tilda-req="1" aria-required="true" data-tilda-rule="url" style="color:#000000;border:1px solid #000000;">
+                      
+                        <label for="password1">Пароль</label>
+                    </div>
+                </div>
+                <div class="row align-self-center">
+                    <div class="input-field col align-self-center s6">
+                        <input type="password" name="password2" class="t-input js-tilda-rule " data-tilda-req="1" aria-required="true" data-tilda-rule="url" style="color:#000000;border:1px solid #000000;">
+                      
+                        <label for="password2">Повторите пароль</label>
+                    </div>
+                </div>
+            
+        </div>
+        {% if error_unique %}
+            <div class="row">
+                <div class="col s9 offset-s3">
+                    <div style="font-size: 20px;background-color: red;color:white;width:400px;text-align:center;">Такой Alias уже зарегистрирован</div>
+                </div>
+            </div>
+        {% endif %}
+        {% if error_password %}
+            <div class="row">
+                <div class="col s9 offset-s3">
+                    <div style="font-size: 20px;background-color: red;color:white;width:400px;text-align:center;">Пароли не совпадают</div>
+                </div>
+            </div>
+        {% endif %}
+        <div class="row">
+            <div class="col s9 offset-s3">
+                <button type="submit" class="btn-floating btn-large waves-effect waves-light red" name="form" value="add"><i class="material-icons">add</i></button>
+            </div>
+        </div>
+        
+    </form>
+    </div>
+    
+</body>
+</html>
