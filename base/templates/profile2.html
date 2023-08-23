@@ -1,0 +1,73 @@
+{% extends "clubs2.html" %}
+
+
+{% block content %}
+
+<div class="row mt-5 mx-auto title">
+     Профиль
+</div>
+
+<div class="conteiner">
+     <div class="row mx-auto lk" style="width: 450px;">
+          <div class="col">
+               <p>Имя</p>
+               <p>Фамилия</p>
+               <p>Класс</p>
+               <p>Alias</p>
+          </div>
+          <div class="col">
+               <form method="POST" >
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Имя" value="{{ profile.name }}">
+                    <input type="text" name="surname" placeholder="Фамилия" value="{{ profile.surname }}">
+                    <input type="text" name="grade" placeholder="Класс" value="{{ profile.grade }}">
+                    <input type="text" name="alias" placeholder="ссылка на Telegram" value="{{ profile.alias }}">
+
+                    <button type="submit" class="tn-atom" style="height: 48px;">Сохранить</button>
+               </form>
+          </div>
+     </div>
+</div>
+
+<div class="row" style="margin-top: 40px;">
+     <div class="conteiner profile club mx-auto">
+          
+          <div class="row" style="margin: 15px;text-align: center;">
+               <h4>Мои клубы</h4>
+          </div>
+          <div class="row">
+               <section class="">
+                    <div class="tbl-header">
+                      <table cellspacing="0" cellpadding="0" border="0">
+                        <thead>
+                          <tr>
+                            <th><div class="item-text1">Имя</div></th>
+                            <th><div class="item-text2">Описание</div></th>
+                            <th><div class="item-text3">Ссылка</div></th>
+                            <th><div class="item-text4">Редактировать</div></th>
+                            <th><div class="item-text5">Удалить</div></th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                    <div class="tbl-content">
+                      <table cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                          {% for club in clubs %}
+                            <tr>
+                              <td><div class="item-text1">{{ club.name }}</div></td>
+                              <td><div class="item-text2">{{ club.description }}</div></td>
+                              <td><div class="item-text3">{{ club.link }}</div></td>
+                              <th><div><a href="{% url 'base:edit_club' club.id %}">Редактировать</a></div></th>
+                              <th><div><a href="{% url 'base:delete_club' club.id %}">Удалить</a></div></th>
+                            </tr>
+                          {% endfor %}
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+          </div>
+     </div>
+</div>
+
+{%endblock%}

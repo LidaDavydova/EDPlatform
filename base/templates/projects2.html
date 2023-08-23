@@ -1,0 +1,30 @@
+
+{% extends "clubs2.html" %}
+
+
+{% block content %}
+
+
+  <div class="row mb-8">
+    <div class="col-md-12 text-center">
+      <a class="add" href="{% url 'base:add_project' %}"><button type="button" class="btn btn-lg add" autofocus>Добавить свой проект</button></a>
+    </div>
+  </div>
+
+
+  {% for project in projects %}
+  <div class="conteiner bg-light mx-auto project">
+    <div class="row project-row">
+      <div class="col">
+          <p class="name">{{ project.name }}</p>
+      </div>
+      <div class="col">
+          <p class="">{{ project.description }}</p>
+          <p class="">{{ project.link }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+
+  {%endblock%}
