@@ -1,5 +1,5 @@
 {% extends "clubs2.html" %}
-
+{% load static %}
 
 {% block content %}
 
@@ -30,42 +30,81 @@
 </div>
 
 <div class="row" style="margin-top: 40px;">
-     <div class="conteiner profile club mx-auto">
-          
-          <div class="row" style="margin: 15px;text-align: center;">
-               <h4>Мои клубы</h4>
+     <div class="profile">
+          <div class="conteiner club mx-auto">
+               
+               <div class="row" style="margin: 15px;text-align: center;">
+                    <h4>Мои клубы</h4>
+               </div>
+               <div class="row">
+                    <section class="">
+                         <div class="tbl-header">
+                         <table cellspacing="0" cellpadding="0" border="0">
+                         <thead>
+                              <tr>
+                              <th><div class="item-text1">Имя</div></th>
+                              <th><div class="item-text2">Описание</div></th>
+                              <th><div class="item-text3">Ссылка</div></th>
+                              <th><div class="">Редактировать</div></th>
+                              <th><div class="">Удалить</div></th>
+                              </tr>
+                         </thead>
+                         </table>
+                         </div>
+                         <div class="tbl-content">
+                         <table cellspacing="0" cellpadding="0" border="0">
+                         <tbody>
+                              {% for club in clubs %}
+                              <tr>
+                                   <td><div class="item-text1">{{ club.name }}</div></td>
+                                   <td><div class="item-text2">{{ club.description }}</div></td>
+                                   <td><div class="item-text3">{{club.link}}</div></td>
+                                   <th><div><a href="{% url 'base:edit_club' club.id %}">Редактировать</a></div></th>
+                                   <th><div><a href="{% url 'base:delete_club' club.id %}">Удалить</a></div></th>
+                              </tr>
+                              {% endfor %}
+                         </tbody>
+                         </table>
+                         </div>
+                    </section>
+               </div>
           </div>
-          <div class="row">
-               <section class="">
-                    <div class="tbl-header">
-                      <table cellspacing="0" cellpadding="0" border="0">
-                        <thead>
-                          <tr>
-                            <th><div class="item-text1">Имя</div></th>
-                            <th><div class="item-text2">Описание</div></th>
-                            <th><div class="item-text3">Ссылка</div></th>
-                            <th><div class="item-text4">Редактировать</div></th>
-                            <th><div class="item-text5">Удалить</div></th>
-                          </tr>
-                        </thead>
-                      </table>
-                    </div>
-                    <div class="tbl-content">
-                      <table cellspacing="0" cellpadding="0" border="0">
-                        <tbody>
-                          {% for club in clubs %}
-                            <tr>
-                              <td><div class="item-text1">{{ club.name }}</div></td>
-                              <td><div class="item-text2">{{ club.description }}</div></td>
-                              <td><div class="item-text3">{{ club.link }}</div></td>
-                              <th><div><a href="{% url 'base:edit_club' club.id %}">Редактировать</a></div></th>
-                              <th><div><a href="{% url 'base:delete_club' club.id %}">Удалить</a></div></th>
-                            </tr>
-                          {% endfor %}
-                        </tbody>
-                      </table>
-                    </div>
-                  </section>
+          <div class="conteiner vacancies mx-auto">
+               <div class="row" style="margin: 15px;text-align: center;">
+                    <h4>Мои вакансии</h4>
+               </div>
+               <div class="row">
+                    <section class="">
+                         <div class="tbl-header">
+                         <table cellspacing="0" cellpadding="0" border="0">
+                         <thead>
+                              <tr>
+                              <th><div class="item-text1">Имя</div></th>
+                              <th><div class="item-text2">Описание</div></th>
+                              <th><div class="item-text3">Ссылка</div></th>
+                              <th><div class="">Редактировать</div></th>
+                              <th><div class="">Удалить</div></th>
+                              </tr>
+                         </thead>
+                         </table>
+                         </div>
+                         <div class="tbl-content">
+                         <table cellspacing="0" cellpadding="0" border="0">
+                         <tbody>
+                              {% for vacancy in vacancies %}
+                                <tr>
+                                  <td><div class="item-text1">{{ vacancy.name }}</div></td>
+                                  <td><div class="item-text2">{{ vacancy.description }}</div></td>
+                                  <td><div class="item-text3">{{ vacancy.link }}</div></td>
+                                  <th><div><a href="{% url 'base:edit_vacancy' vacancy.id %}">Редактировать</a></div></th>
+                                  <th><div><a href="{% url 'base:delete_vacancy' vacancy.id %}">Удалить</a></div></th>
+                                </tr>
+                              {% endfor %}
+                         </tbody>
+                         </table>
+                         </div>
+                    </section>
+               </div>
           </div>
      </div>
 </div>

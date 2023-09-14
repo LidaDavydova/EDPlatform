@@ -18,6 +18,7 @@ urlpatterns = [
     path('profile/add_club/', views.add_club, name='add_club'),
     path('tasks/add_task', views.add_task, name='add_task'),
     path('profile/', views.profile, name='profile'),
+    path('profile2/', views.profile2, name='profile2'),
     path('ege_dop/', views.ege_dop, name='ege_dop'),
     path('tasks/', views.tasks, name='tasks'),
     path('projects/', views.projects, name='projects'),

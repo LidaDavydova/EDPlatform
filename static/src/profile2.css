@@ -2,7 +2,7 @@
 .title {
      width: 100px;
      text-align: center;
-     font-size: 35px;
+     font-size: 45px;
      margin-bottom: 50px;
 }
 
@@ -49,12 +49,25 @@ td{
      border-bottom: solid 1px rgba(255,255,255,0.1);
    }
 
+/* color tables */ 
+
+.profile.club a {
+     color: #ff8562;
+}
+
+.profile.club a {
+     color: #ff8562;
+}
+
+/* all tables */ 
+
 tr .item-text1 {
-     width:63px;
+     background: transparent;
+     width: 80px;
 	overflow: auto;
 	text-overflow: ellipsis;
 	display: -webkit-box;
-	-webkit-line-clamp: 4;
+	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }
    
@@ -63,7 +76,7 @@ tr .item-text2 {
 	overflow: auto;
 	text-overflow: ellipsis;
 	display: -webkit-box;
-	-webkit-line-clamp: 4;
+	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }
 
@@ -72,12 +85,21 @@ tr .item-text3 {
 	overflow: auto;
 	text-overflow: ellipsis;
 	display: -webkit-box;
-	-webkit-line-clamp: 4;
+	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }
 
-.profile.club {
+.profile {
      margin-left: 100px;
-     width: 490px;
+     width: 590px !important;
      height: 400px;
+     background-color: #be7093 !important;
+}
+
+.profile .tbl-content td {
+     font-size: 18px !important;
+}
+
+.profile .tbl-header div {
+     text-align: center !important;
 }

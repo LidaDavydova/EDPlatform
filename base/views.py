@@ -141,6 +141,33 @@ def profile(request):
             user.username = alias
             user.save()
             context['profile'] = Profile.objects.get(user_id=request.user)
+        return render(request, "profile.html", context)
+    except:
+        return redirect('base:login')
+    
+def profile2(request):
+    try:
+        context = {
+            'vacancies': Vacancies.objects.filter(user_id=request.user)[::-1],
+            'projects': Projects.objects.filter(user_id=request.user)[::-1],
+            'clubs': Clubs.objects.filter(user_id=request.user)[::-1],
+            'profile': Profile.objects.get(user_id=request.user),
+        }
+        if request.method == 'POST':
+            name = request.POST['name']
+            surname = request.POST['surname']
+            grade = request.POST['grade']
+            alias = request.POST['alias']
+            user = Profile.objects.get(user_id=request.user)
+            user.name = name
+            user.surname = surname
+            user.grade = grade
+            user.alias = alias
+            user.save()
+            user = User.objects.get(pk=request.user.id)
+            user.username = alias
+            user.save()
+            context['profile'] = Profile.objects.get(user_id=request.user)
         return render(request, "profile2.html", context)
     except:
         return redirect('base:login')
